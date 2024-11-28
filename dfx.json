@@ -1,0 +1,21 @@
+{
+    "canisters": {
+        "calc": {
+            "type": "custom",
+            "build": "python -m kybra calc src/main.py src/main.did",
+            "candid": "src/main.did",
+            "wasm": ".kybra/calc/calc.wasm",
+            "gzip": true,
+            "metadata": [
+                {
+                    "name": "candid:service",
+                    "path": "src/main.did"
+                },
+                {
+                    "name": "cdk:name",
+                    "content": "kybra"
+                }
+            ]
+        }
+    }
+}
